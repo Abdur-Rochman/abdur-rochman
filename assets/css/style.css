@@ -1,0 +1,35 @@
+.hero-image-circle {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+
+.floating {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+#typing-text {
+  min-height: 28px; /* agar tidak bergeser sebelum teks muncul */
+  border-right: 2px solid #0d6efd;
+  animation: blink 0.8s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+/* Scroll animation base */
+.opacity-0 { opacity: 0; }
+.translate-y-50 { transform: translateY(50px); transition: all 1s ease; }
+.translate-x-50 { transform: translateX(50px); transition: all 1s ease; }
+
+/* Saat muncul di layar */
+.animate-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
